@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="container">
+        <img id="arrow" src="/circle/arrow.png" alt="arrow" width="50" height="50">
+        <canvas id="wheel"></canvas>
+
+    </div>
+
+    <div>
+        <form action="" id="addNameForm">
+            <input type="text" id="name" required minlength="1" maxlength="22" class="form-control" placeholder="name">
+            <button type="submit">Add Name To Wheel</button>
+        </form>
+    </div>
+    <div>
+        <form action="" id="clearWheelForm">
+            <button id="clearWheelBtn" type="submit">Clear Wheel</button>
+        </form>
+        <form action="" id="spinWheelForm"></form>
+        <button id="spinWheelBtn" type="submit">Spin!</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

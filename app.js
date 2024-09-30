@@ -1,11 +1,3 @@
-// things to work out
-// limiting number of submissions to 12-14.
-// color changes every time submit, due to rerunning the function
-// on this note, no black backgrounds, as the text is black
-// realigning the text
-// 
-
-
 let wheelCanvas = document.getElementById('wheel');
 let wheelContext = wheelCanvas.getContext('2d');
 
@@ -39,9 +31,6 @@ let arrow = document.getElementById("arrow");
 // how thick you want a segment
 let segmentDepth = 248;
 
-function showArrow() {
-    document.getElementById('arrow').style.display = "block";
-}
 
 addNameForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -57,13 +46,7 @@ clearWheelForm.addEventListener("submit", (e) => {
     nameArray = []
     segments = 0
     wheelContext.clearRect(0, 0, wheelCanvas.width, wheelCanvas.height);
-    //    currently just reloads the page, but that is also what I wanted
 })
-
-
-function init() {
-    drawSegments(segmentDepth);
-}
 
 
 function drawSegments(radius) {
